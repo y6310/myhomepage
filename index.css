@@ -1,0 +1,352 @@
+html{
+    height: 4226px;
+    background-color: F7FBFC;
+}
+body{
+    height:100%;
+    margin: 0%;
+}
+#title{
+    position: absolute;
+    width: 660px;
+    height: 201px;
+    left: 390px;
+    top: 105px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 85px;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+
+    color: #769FCD;
+;
+}
+#profile_title{
+    position: absolute;
+    width: 87px;
+    height: 39.58px;
+    left: 473px;
+    top: 417px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0%;
+    
+    color: #769FCD;
+    z-index: 10;
+    
+}
+#favorite_title{
+    position: absolute;
+    width: 103px;
+    height: 26.04px;
+    left: 668px;
+    top: 416.71px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0%;
+    
+    color: #769FCD;
+    
+    
+    z-index: 10;
+}
+#something_title{
+    position: absolute;
+    width: 143px;
+    height: 26.04px;
+    left: 860px;
+    top: 416.71px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0%;
+    
+    color: #769FCD;
+    
+    z-index: 10;
+}
+#header{
+    position: absolute;
+    width: 1440px;
+    height: 83px;
+    left: 0px;
+    top: 389px;
+    margin: 0%;
+    
+    background: #D6E6F2;
+    z-index:0;
+}
+#profile{
+    position: absolute;
+    width: 164px;
+    height: 52px;
+    left: 815px;
+    top: 704px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    
+    color: #769FCD;
+    margin: 0%;
+    
+}
+#icon{
+    position: absolute;
+    width: 221px;
+    height: 221px;
+    left: 220px;
+    top: 704px;
+    
+    background: url(IMG_4814.jpg);
+    border-radius: 80px;
+    margin: 0%;
+}
+#profile_contents{
+    position: absolute;
+    width: 645px;
+    height: 125px;
+    left: 560px;
+    top: 800px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    
+    color: #769FCD;
+    margin: 0%;
+}
+#favorite_pic{
+    position: absolute;
+    width: 1440px;
+    height: 2298px;
+    left: 0px;
+    top: 1093px;
+    
+    background: url(IMG_4913.jpg);
+    margin: 0%;
+}
+#favorite{
+    position: absolute;
+    width: 179px;
+    height: 61px;
+    left: 241px;
+    top: 1152px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    margin: 0%;
+    
+    color: #F7FBFC;
+}
+#fukyousikeiku{
+    position: absolute;
+    width: 280px;
+    height: 24px;
+    left: 220px;
+    top: 1213px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0%;
+    
+    color: #F7FBFC;
+}
+#music{
+    position: absolute;
+    width: 84px;
+    height: 36px;
+    left: 307px;
+    top: 1322px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0%;
+
+    color: #D6E6F2;
+
+}
+#music_content_1{
+    position: absolute;
+    width: 477px;
+    height: 63px;
+    left: 222px;
+    top: 1370px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+
+    color: #D6E6F2;
+}
+#youtube_1{
+    position: absolute;
+    left: 405px;
+    top: 1503px;
+}
+#youtube_2{
+    position: absolute;
+    left: 408px;
+    top: 1927px;
+}
+#music_content_2{
+    position: absolute;
+    width: 721px;
+    height: 42px;
+    left: 222px;
+    top: 2278px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+    
+    color: #D6E6F2;
+}
+#food{
+    position: absolute;
+    width: 81px;
+    height: 30px;
+    left: 305px;
+    top: 2405px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0%;
+
+    color: #D6E6F2;
+
+}
+#food_content{
+    position: absolute;
+    width: 712px;
+    height: 18px;
+    left: 220px;
+    top: 2442px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+    
+    color: #D6E6F2;   
+}
+#something{
+    position: absolute;
+    width: 260px;
+    height: 55px;
+    left: 300px;
+    top: 3481px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    margin: 0%;
+
+    color: #769FCD;
+
+}
+#something_content{
+    position: absolute;
+    width: 164px;
+    height: 19px;
+    left: 295px;
+    top: 3548px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0%;
+
+    color: #769FCD;
+}
+#ichidaisai{
+    position: absolute;
+    width: 752px;
+    height: 78px;
+    left: 390px;
+    top: 3651px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+
+    color: #769FCD;
+}
+#timetable{
+    position: absolute;
+    width: 745px;
+    height: 61px;
+    left: 390px;
+    top: 3786px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+
+    color: #769FCD;
+}
+#homepage{
+    position: absolute;
+    width: 745px;
+    height: 79px;
+    left: 390px;
+    top: 3897px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0%;
+
+    color: #769FCD;
+}
