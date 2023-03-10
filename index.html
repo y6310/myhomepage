@@ -3,23 +3,47 @@
     <head>
         <title>ユートサの部屋</title>
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" type="image/jpg" href="/IMG_4814.jpg">
+        <link rel="icon" type="image/jpg" href="./IMG_4814.jpg" type="image/x-icon"> 
+        <!-- jQuery.jsの読み込み -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+        <!-- スムーズスクロール部分の記述 -->
+        <script>
+            $(function(){
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href= $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+            });
+        </script>
     </head>
     <body>
-        <p id="profile_title">profile</p>   
-        <p id="favorite_title">favorite</p>
-        <p id="something_title">something</p>
+        <a id="profile_title" href="#profile_div">profile</a>   
+        <a id="favorite_title" href="#favorite">favorite</a>
+        <a id="something_title" href="#something">something</a>
         <div id="header"></div>
         <p id="title">Yutosa's room<br>
-        ユートサの部屋</p>                          
-        <p id="profile">profile</p>
-        <img src="IMG_4814.jpg" id="icon">
-        <p id="profile_contents">
-            2001年生まれの情報系B4。医用画像工学研究室所属。吹奏楽部・大学祭実行委員会など。<br> 
-            吹奏楽部ではトランペットをやっていました。 <br>
-            大学祭実行委員会で3年次にシステム局局長を務めたことを機にフロントエンドの勉強を始めたり。 <br>
-            データサイエンスや機械学習系にも興味あり。Kaggleもはじめたいな...
-        </p>
+        ユートサの部屋</p>
+        <div id="profile_div">                          
+            <p id="profile">profile</p>
+            <img src="IMG_4814.jpg" id="icon">
+            <p id="profile_contents">
+                2001年生まれの情報系B4。医用画像工学研究室所属。吹奏楽部・大学祭実行委員会など。<br> 
+                吹奏楽部ではトランペットをやっていました。 <br>
+                大学祭実行委員会で3年次にシステム局局長を務めたことを機にフロントエンドの勉強を始めたり。 <br>
+                データサイエンスや機械学習系にも興味あり。Kaggleもはじめたいな...
+            </p>
+        </div>
         <div id="Desktop-3">
             <img src="IMG_4913.jpg" id="favorite_pic">
             <p id="favorite">favorite</p>
@@ -39,21 +63,33 @@
        <p id="food">food</p>
        <p id="food_content">食べることが好きで、ラーメン屋さんや喫茶店巡ったりしてます。<br>
         飯テロ画像を載せちゃう。</p>
+        <img src="IMG_7032.jpg" id="foodpic_1">
+        <img src="IMG_7644.JPG" id="foodpic_2">
+        <img src="IMG_7748.jpg" id="foodpic_3">
+        <img src="IMG_8307.jpg" id="foodpic_4">
+        <img src="IMG_8331.jpg" id="foodpic_5">
+        <img src="IMG_8417.JPG" id="foodpic_6">
+        <img src="IMG_8438.JPG" id="foodpic_7">
+        <img src="IMG_8431.JPG" id="foodpic_8">
+        <img src="IMG_6800.JPG" id="foodpic_9">
+        
         <p id="something">something</p>
         <p id="something_content">作ったものとか。</p>
-        <p id="ichidaisai">広島市立大学第29回大学祭 (ichidaisai.com)　(2022年春～秋)<br>
+        <p id="ichidaisai"><a href="https://ichidaisai.com/" target="_blank">広島市立大学第29回大学祭 (ichidaisai.com) </a>
+            (2022年春～秋)<br>
             自分もコード書きましたが、主にPM的な立ち位置でやりました。<br>
             同じ部署の仲間と作りました。<br>
             html/css/javascriptの勉強を始めて、初めて一般の人に見てもらいました。
         </p>
-        <p id="timetable">timetable(2022年12月～2023年2月)<br>
+        <p id="timetable"><a href="https://github.com/y6310/timetable" target="_blank">timetable</a>
+            (2022年12月～2023年2月)<br>
             時間割作成アプリです。<br>
             html/css/javascriptで作りました。練習作です。<br>
         </p>
         <p id="homepage">このホームページ
             大学祭のホームページ作ったりして、html/css/javascriptに慣れたけど実際に自分で公開までやったことないな～と思って作りました。<br>
-            少しFigma使ってみたり。
+            少しFigma使ってみたり、jQuery使ってみたりしました。
         </p>
-
+        
     </body>
 </html>

@@ -3,6 +3,7 @@ html{
     background-color: F7FBFC;
 }
 body{
+    position: absolute;
     height:100%;
     margin: 0%;
 }
@@ -91,12 +92,21 @@ body{
     background: #D6E6F2;
     z-index:0;
 }
+#profile_div{
+    position: relative;
+    width: 1440px;
+    height: 300px;
+    left: 0px;
+    top: 500px;
+    margin: 0%;
+    z-index:2;
+}
 #profile{
     position: absolute;
     width: 164px;
     height: 52px;
     left: 815px;
-    top: 704px;
+    top: 100px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -113,7 +123,7 @@ body{
     width: 221px;
     height: 221px;
     left: 220px;
-    top: 704px;
+    top: 200px;
     
     background: url(IMG_4814.jpg);
     border-radius: 80px;
@@ -124,7 +134,7 @@ body{
     width: 645px;
     height: 125px;
     left: 560px;
-    top: 800px;
+    top: 250px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -269,6 +279,73 @@ body{
     
     color: #D6E6F2;   
 }
+#foodpic_1{
+    position: absolute;
+    width: 317px;
+    height: 217px;
+    left: 223px;
+    top: 2519px;
+}
+#foodpic_2{
+    position: absolute;
+    width: 320px;
+    height: 217px;
+    left: 560px;
+    top: 2519px;
+
+}
+#foodpic_3{
+    position: absolute;
+    width: 320px;
+    height: 217px;
+    left: 900px;
+    top: 2519px; 
+}
+#foodpic_4{
+    position: absolute;
+    width: 317px;
+    height: 218px;
+    left: 223px;
+    top: 2784px;
+
+}
+#foodpic_5{
+    position: absolute;
+    width: 318px;
+    height: 217px;
+    left: 560px;
+    top: 2784px;
+        
+}
+#foodpic_6{
+    position: absolute;
+    width: 320px;
+    height: 218px;
+    left: 900px;
+    top: 2784px;    
+}
+#foodpic_7{
+    position: absolute;
+    width: 317px;
+    height: 218px;
+    left: 223px;
+    top: 3037px;    
+}
+#foodpic_8{
+    position: absolute;
+    width: 320px;
+    height: 218px;
+    left: 560px;
+    top: 3037px;    
+}
+#foodpic_9{
+    position: absolute;
+    width: 319px;
+    height: 217px;
+    left: 900px;
+    top: 3037px;     
+}
+
 #something{
     position: absolute;
     width: 260px;
