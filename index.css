@@ -1,30 +1,47 @@
 html{
     height: 4226px;
-    background-color: F7FBFC;
+    background-color: #F7FBFC;
+    width: 100%;
 }
+
 body{
     position: absolute;
+    width: 100%;
     height:100%;
-    margin: 0%;
+    margin:0%;
+
+    margin: auto;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
 }
+#center{
+    display: inline-block;
+    text-align: left;
+    margin:0 auto;
+    /*display: flex;*/
+}
+
 #title{
     position: absolute;
-    width: 660px;
-    height: 201px;
-    left: 390px;
-    top: 105px;
-
+    width: 493px;
+    height: 142px;
+    left: 473px;
+    top: 164px;
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
     line-height: 85px;
+    display: flex;
     align-items: center;
     text-align: center;
-    margin: 0%;
-
     color: #769FCD;
-;
+    margin:0%;
+    /*display: inline-block;
+    text-align: left;*/
 }
 #profile_title{
     position: absolute;
@@ -83,7 +100,7 @@ body{
 }
 #header{
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 83px;
     left: 0px;
     top: 389px;
@@ -94,7 +111,7 @@ body{
 }
 #profile_div{
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 300px;
     left: 0px;
     top: 500px;
@@ -147,7 +164,7 @@ body{
 }
 #favorite_pic{
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 2298px;
     left: 0px;
     top: 1093px;
