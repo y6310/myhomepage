@@ -1,99 +1,128 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
     <head>
-        <title>ユートサの部屋</title>
+        <title>Yutosa's Portfolio</title>
+        <meta charset="UTF-8">
         <meta http-equiv="content-type" charset="UTF-8">
+        <link rel="icon" type="image/jpg" href="./Mask group.png" type="image/x-icon"> 
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" type="image/jpg" href="./IMG_4814.jpg" type="image/x-icon"> 
-        <!-- jQuery.jsの読み込み -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-
-        <!-- スムーズスクロール部分の記述 -->
-        <script>
-            $(function(){
-            // #で始まるアンカーをクリックした場合に処理
-            $('a[href^=#]').click(function() {
-                // スクロールの速度
-                var speed = 400; // ミリ秒
-                // アンカーの値取得
-                var href= $(this).attr("href");
-                // 移動先を取得
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                // 移動先を数値で取得
-                var position = target.offset().top;
-                // スムーススクロール
-                $('body,html').animate({scrollTop:position}, speed, 'swing');
-                return false;
-            });
-            });
-        </script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
     </head>
     <body>
-        <div id="center">
-            <div id="header"></div>
-            <a id="profile_title" href="#profile_div">profile</a>   
-            <a id="favorite_title" href="#favorite">favorite</a>
-            <a id="something_title" href="#something">something</a>
-            <p id="title">Yutosa's room<br>ユートサの部屋</p>
-            <div id="profile_div">                          
-                <p id="profile">profile</p>
-                <img src="IMG_4814.jpg" id="icon">
-                <p id="profile_contents">
-                    2001年生まれの情報系B4。医用画像工学研究室所属。吹奏楽部・大学祭実行委員会など。<br> 
-                    吹奏楽部ではトランペットをやっていました。 <br>
-                   
-                
-                </p>
-            </div>
-            <div id="Desktop-3">
-                <img src="IMG_4913.jpg" id="favorite_pic">
-                <p id="favorite">favorite</p>
-                <p id="fukyousikeiku">好きなものを布教していく～！</p>
-            </div>
-            <p id="music">music</p>
-            <p id="music_content_1">小学校は金管バンド部、中・高・大とずっと吹奏楽部でした。
-                お気に入りの吹奏楽曲の動画を貼っておきます。
-                いっぱいあって紹介しきれない...
-                </p>
-                <iframe id="youtube_1" width="560" height="315" src="https://www.youtube.com/embed/F2lKeocdjRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe id="youtube_2" width="560" height="315" src="https://www.youtube.com/embed/iTuSq6x9nmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p id="music_content_2">
-                流行りの曲もボカロも聞きます。<br>
-            </p> 
-            <p id="food">food</p>
-            <p id="food_content">食べることが好きで、ラーメン屋さんや喫茶店巡ったりしてます。<br>
-                飯テロ画像を載せちゃう。</p>
-            <img src="IMG_7032.JPG" id="foodpic_1">
-            <img src="IMG_7644.JPG" id="foodpic_2">
-            <img src="IMG_7748.JPG" id="foodpic_3">
-            <img src="IMG_8307.JPG" id="foodpic_4">
-            <img src="IMG_8331.jpg" id="foodpic_5">
-            <img src="IMG_8417.JPG" id="foodpic_6">
-            <img src="IMG_8438.JPG" id="foodpic_7">
-            <img src="IMG_8431.JPG" id="foodpic_8">
-            <img src="IMG_6800.JPG" id="foodpic_9">
-            
-            <p id="something">something</p>
-            <p id="something_content">作ったものとか。</p>
-            <p id="ichidaisai"><a href="https://2022.ichidaisai.com/" target="_blank">広島市立大学第29回大学祭 (2022.ichidaisai.com) </a>
-                (2022年春～秋)<br>
-                自分もコード書きましたが、主にPM的な立ち位置でやりました。<br>
-                同じ部署の仲間と作りました。<br>
-                html/css/javascriptの勉強を始めて、初めて一般の人に見てもらいました。
-            </p>
-            <p id="timetable">
-                timetable
-                (2022年12月～2023年2月)<br>
-                GitHub→<a href="https://github.com/y6310/timetable" target="_blank">https://github.com/y6310/timetable</a><br>
-                時間割作成アプリです。<br>
-                html/css/javascriptで作りました。練習作です。<br>
-            </p>
-            <p id="homepage">
-                <a href="http://yutosa.sakura.ne.jp/" target="_blank">このホームページ</a>
-                (2023年3月)<br>
-                大学祭のホームページ作ったりして、html/css/javascriptに慣れたけど実際に自分で公開までやったことないな～と思って作りました。<br>
-                少しFigma使ってみたり、jQuery使ってみたりしました。
-            </p>
+        <div  id = "title_div">
+        <p id="title">Yutosa's Portfolio</p>
         </div>
+        <div id = "content_bar">
+            <a id="about_title" href="#About">About</a>  
+            <a id="skill_title" href="#Skill">Skill</a>
+            <a id="work_title" href="#Work">Work</a>
+            <a id="contact_title" href="#Contact">Contact</a>
+        </div>
+        <div id = "about_div">                     
+            <p id="About" class="marker">About</p>
+            <div id="about_flex">
+                <img src="./Mask group.png" id="icon">
+                <div id="circle"></div>
+                <div id="about_contents">
+                    <p>
+                    2001年生まれの情報系B4。来年度は院進予定です。医用画像工学研究グループ所属。<br>
+                    中学から大学までずっと吹奏楽部でトランペット吹いています。<br>
+                    画像は大学の寮にいた猫。<br>
+                    Github→<a href="https://github.com/y6310" target="_blank">https://github.com/y6310</a><br>
+                    X→<a href="https://twitter.com/zzz_6310" target="_blank">https://twitter.com/zzz_6310</a>
+                    </p>
+                </div>
+            </div>   
+        </div> 
+        <div id ="skill_div">
+            <p id="Skill" class="marker">Skill</p>
+            <div id="skill_flex">
+                <div id = "skill_contents">
+                    <p>
+                        C,C++…………………………大学の授業程度。<br>
+                        Python,matlab………………研究でメインで使っています。PyhonはOpenCVの画像処理など。<br>
+                        HTML,CSS,JavaScript,Figma………ちょっとした個人制作程度でまだまだ勉強中です。<br>
+                        資格等<br>
+                        基本情報技術者、全国珠算教育連盟珠算検定四段、暗算検定六段
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id = "work_div">    
+            <p id="Work" class="marker">Work</p>
+            <div id="work_flex">
+                <div id = "work_contents">
+                    <p>
+                        広島市立大学第29回大学祭HP<br>
+                        GitHub→<a href="https://github.com/ichidaisai/2022.ichidaisai.com" target="_blank">https://github.com/ichidaisai/2022.ichidaisai.com</a><br>
+                        自分もコード書きましたが、主にPM的な立ち位置でやりました。<br>
+                        html/css/JavaScriptの勉強を始めて、後輩に教えたりして、同じ部署の仲間と作りました。初めて一般の人に見てもらいました。<br>
+                        <br>
+                        2022年度図書館Webおみくじ<br>
+                        GitHub→<a href="https://github.com/y6310/omikuji" target="_blank">https://github.com/y6310/omikuji</a><br>
+                        <a href="https://www.lib.hiroshima-cu.ac.jp/news/5823/" target="_blank">広島市立大学附属図書館HP</a> で学内限定公開されているWebおみくじです(コード・画像の公開許可済)<br>
+                        html/css/JavaScriptで作りました。代々学生アルバイトがWebおみくじを改良して作成しています。
+                        2022年度は私が担当しました。おみくじの画像は他の方に作成していただきました。<br>
+                        <br>
+                        timetable<br> 
+                        GitHub→<a href="https://github.com/y6310/timetable" target="_blank">https://github.com/y6310/timetable</a><br>
+                        時間割作成アプリです。html/css/JavaScriptで作りました。<br>
+                        <br>
+                        このホームページ<br>
+                        大学祭のホームページ作って、html/css/javascriptに慣れたけど実際に自分で公開までやったことなかったので作りました。<br>
+                        Figmaでデザインから作成しました。2024年1月リニューアル。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id = "contact_div">    
+            <p id="Contact" class="marker">Contact</p>
+            <div id="contact_flex">
+                <div  id="contact_contents">
+                    <p>
+                        XのDMへお気軽にどうぞ!<br>
+                    </p>
+                </div>
+            </div>
+        </div> 
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>    
+            //アンダーラインひく
+                const marker = document.querySelectorAll(".marker");
+                document.addEventListener("scroll", ()=>{
+                for (let i = 0; i < marker.length; i++) {
+                    const element = marker[i];
+                    const distance = element.getBoundingClientRect().top;
+                    if(distance < window.innerHeight * .8){
+                    element.classList.add("active");
+                    }
+                }
+                })
+    
+                $(function(){
+                // #で始まるアンカーをクリックした場合に処理
+                $('a[href^="#"]').click(function() {
+                    // スクロールの速度
+                    var speed = 400; // ミリ秒
+                    // アンカーの値取得
+                    var href = $(this).attr("href");
+                    // 移動先を取得
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    // 移動先を数値で取得
+                    var position = target.offset().top;
+                    // ウィンドウの高さ
+                    var windowHeight = $(window).height();
+                    // スムーススクロール
+                    $('body,html').animate({scrollTop: position - (windowHeight / 3) + (target.height() / 2)}, speed, 'swing');
+                    return false;
+                });
+                });
+        </script>
+
     </body>
+    <footer>
+        <p>©2023 Yutosa</p>
+    </footer>
+
 </html>
